@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="box">
+        <div class="in">
+            <input id="input" type="text" disabled>
+        </div>
+        <table class="table">
+            <tr>
+                <td onclick="Ac('6')" id="btn-color">AC</td>
+                <td onclick="delet()" id="btn-color">DEL</td>
+                <td onclick="value('%')"id="btn-color">%</td>
+                <td onclick="value('/')" id="btn-sp">/</td>
+            </tr>
+            <tr>
+                <td onclick="value(7)">7</td>
+                <td onclick=" value(8)">8</td>
+                <td onclick="value(9)">9</td>
+                <td onclick="value('*')" id="btn-sp">*</td>
+            </tr>
+            <tr>
+                <td onclick="value(4)">4</td>
+                <td onclick="value(5)">5</td>
+                <td onclick="value(6)">6</td>
+                <td onclick="value('-')" id="btn-sp">-</td>
+            </tr>
+            <tr>
+                <td onclick="value(1)">1</td>
+                <td onclick="value(2)">2</td>
+                <td onclick="value(3)">3</td>
+                <td onclick="value('+')" id="btn-sp">+</td>
+            </tr>
+            <tr>
+                <td id="zero" colspan="2" onclick="value(0)">0</td>
+                <td onclick="value('.')">.</td>
+                <td onclick="calc()" id="btn-sp">=</td>
+            </tr>
+        </table>
+        
+    </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
